@@ -27,25 +27,10 @@ jobs:
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
-      - name: Prepare portfolio artifact
-        run: |
-          mkdir -p site
-          wget \
-            --mirror \
-            --page-requisites \
-            --convert-links \
-            --adjust-extension \
-            --no-parent \
-            --directory-prefix=/tmp/portfolio \
-            https://khairullo-cybersecurity.barotov-khairullo.chatgpt.site/
-          cp -a /tmp/portfolio/khairullo-cybersecurity.barotov-khairullo.chatgpt.site/. site/
-          test -f site/index.html
-          touch site/.nojekyll
-
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: site
+          path: .
 
       - name: Deploy to GitHub Pages
         id: deployment
