@@ -2,12 +2,12 @@ const files = {
   "cv-pdf": {
     name: "CV Khairullo Barotov.pdf",
     type: "application/pdf",
-    parts: ["00", "01", "02", "03", "04", "05", "06"].map(n => `assets/archive/cv-pdf/part-${n}`)
+    parts: ["00", "01", "02", "03", "04", "05"].map(n => `assets/archive/cv-pdf/part-${n}`)
   },
   "cv-docx": {
     name: "CV Khairullo Barotov.docx",
     type: "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    parts: ["00", "01", "02", "03", "04", "05", "06", "07", "08", "09"].map(n => `assets/archive/cv-docx/part-${n}`)
+    parts: ["00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10"].map(n => `assets/archive/cv-docx/part-${n}`)
   }
 };
 
