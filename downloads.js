@@ -2,7 +2,7 @@ const files = {
   "cv-pdf": {
     name: "CV Khairullo Barotov.pdf",
     type: "application/pdf",
-    parts: ["00", "01", "02", "03", "04", "05"].map(n => `assets/archive/cv-pdf/part-${n}`)
+    parts: ["00", "01", "02", "03", "04", "05", "06", "07"].map(n => `assets/archive/cv-pdf/part-${n}`)
   },
   "cv-docx": {
     name: "CV Khairullo Barotov.docx",
